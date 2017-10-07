@@ -65,6 +65,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-jquery" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/07/jquery/" class="article-date">
+  <time datetime="2017-10-07T10:12:51.000Z" itemprop="datePublished">2017-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/07/jquery/">jquery</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#jquery<br>jquery的入口函数</p>
+<ol>
+<li>$(document).ready(function(){<br>})</li>
+<li>$(function(){<br>})<br>##$(document).ready和windown.onload的区别<br>1.覆盖问题<br>原生的入口函数只能使用一次否则后者会把前者覆盖</li>
+</ol>
+<p>jquery的入口函数可以使用不存在覆盖问题<br>2.执行的先后顺序不同<br>onload方法是在Dom元素以及它们所关联的资源文件加载完成后执行<br>jquery只要Dom元素加载完成后就开始执行，而不管这些dom元素所关联文件有没有加载完</p>
+<p>###jquery遍历节点<br>1.parent()方法。返回被选元素的直接父元素<br>2.parents()返回被选元素的所有祖先元素它一路向上直到文档的根元素<br>3.parent(‘select’)指定类型的祖先元素<br>4.children()获取元素的直接子孩子<br>5.children(‘select’)获取指定类型的直接子孩子<br>6.find(‘select’)返回被选元素的指定类型的后代元素，一路向下直到最后一个后代<br>7.prev()获取上一个兄弟元素<br>8.prevall()获取前面的所有兄弟元素<br>9.next()获取下一个兄弟元素<br>10.nextall()获取后面所有的兄弟元素<br>11.siblings()获取前面和后面所有的兄弟元素<br>12.siblings(‘select’)获取前面和后面指定类型的兄弟元素</p>
+<p>####jquery对象<br>1.get(0)获取jquery对象中的单个dom元素<br>2.get(-1)获取jquery对象的最后一个dom元素<br>3.first()获取包含第一个DOM元素的jquery对象<br>4.last()获取包含最后一个DOM元素的jquery对象<br>5.eq()获取包含第几个DOM元素的jquery对象<br>6.length获取jquery对象中dom元素的个数<br>7.toArray()将jquery对象转换包含dom元素的数组等价于get()</p>
+<p>#####操作元素的属性<br>1.attr()设置或返回被选元素的属性值会覆盖原有的属性<br>2.removeattr()移除元素的属性</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/07/jquery/" data-id="cj8h99foh0003bg724ixlgxcl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-function" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/09/25/function/" class="article-date">
@@ -94,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/25/function/" data-id="cj809m5o30000us72pvdiop3q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/25/function/" data-id="cj8h99fny0001bg72mdotoacx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/25/case/" data-id="cj809m5pt0003us72bcx20hfr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/25/case/" data-id="cj8h99fln0000bg727tllrnud" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +225,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/25/hell/" data-id="cj809m5pd0001us72p2du1dyd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/25/hell/" data-id="cj8h99fo80002bg72otm3626e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/25/hello-world/" data-id="cj809m5po0002us72y756vfw0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/25/hello-world/" data-id="cj8h99fon0004bg72ae12d1hs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,7 +297,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li></ul>
     </div>
   </div>
 
@@ -263,6 +308,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/07/jquery/">jquery</a>
+          </li>
         
           <li>
             <a href="/2017/09/25/function/">function</a>
